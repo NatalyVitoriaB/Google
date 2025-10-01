@@ -22,29 +22,27 @@
     </nav>
   </header>
 
-<main class="d-flex flex-column justify-content-center align-items-center flex-grow-1 text-center">
-
+<main class="d-flex flex-column justify-content-center align-items-center text-center flex-grow-1 ">
+<div style="max-width: 584px; width: 100%;"></div>
   <!-- Área principal centralizada vertical e horizontalmente,
        flex-grow-1 garante que ela cresça para ocupar o espaço entre o topo e o rodapé -->
 
-  <h1 class="mb-4">
-
+  
         <!-- container centraliza e dá espaçamento lateral.
          text-center centraliza no mobile e text-md-start alinha à esquerda em telas médias ou maiores -->
     
-         <div class="container text-center text-md-start">
+         <div class="display-3 fw-bold mb-3">
 
             <!-- Cada <a> representa uma letra do logo do Google, 
            com classes de cor para imitar o estilo original -->
 
-      <a href="#" class="me-3 text-primary">G</a>
-      <a href="#" class="me-3 text-danger">O</a>
-      <a href="#" class="me-3 text-warning">O</a>
-      <a href="#" class="me-3 text-primary">G</a>
-      <a href="#" class="me-3 text-success">L</a>
-      <a href="#" class="me-3 text-danger">E</a>
+      <span class="text-primary">G</span>
+      <span class=" text-danger">O</span>
+      <span class=" text-warning">O</span>
+      <span class=" text-primary">G</span>
+      <span class=" text-success">L</span>
+      <span class="text-danger">E</span>
     </div>
-  </h1>
 
   <!-- Formulário de pesquisa fictício, apenas para simulação -->
   <form id="googleForm" class="w-75 w-md-50 mx-auto">
@@ -66,22 +64,18 @@
 
 <!-- Rodapé fixado no fim da página graças ao min-vh-100 no body e mt-auto aqui -->
 
-<footer class="mt-auto py-3 bg-light">
-  <div class="container">
-    <div class="row">
+<footer class="mt-auto">
+  <div class="container-fluid bg-light p-3">
+    <div class="row text-center text-md-start">
             
-      <!-- Primeira coluna de links do rodapé -->
+      <!--  coluna de links do rodapé -->
       
-      <div class="col-6 col-md-3 mb-2">
-        <a href="#" class="d-block mb-1 text-primary">Sobre</a>
-        <a href="#" class="d-block mb-1 text-danger">Publicidade</a>
-      </div>
-      
-      <!-- Segunda coluna de links do rodapé -->
-      
-      <div class="col-6 col-md-3 mb-2">
-        <a href="#" class="d-block mb-1 text-warning">Privacidade</a>
-        <a href="#" class="d-block mb-1 text-success">Termos</a>
+      <div class="row">
+        <div class="col-6 d-flex flex-column flex-md-row justify-content-md-start mb-2 mb-md-0">
+        <a href="#" class="d-block  text-primary me-md-3 mb-2 mb-md-0">Sobre</a>
+        <a href="#" class="d-block  text-danger me-md-3 mb-2 mb-md-0">Publicidade</a>
+        <a href="#" class="d-block  text-warning me-md-3 mb-2 mb-md-0">Privacidade</a>
+        <a href="#" class="d-block  text-success me-md-3 mb-2 mb-md-0">Termos</a>
       </div>
     </div>
   </div>
